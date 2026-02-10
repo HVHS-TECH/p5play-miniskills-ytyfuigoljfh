@@ -9,14 +9,19 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-
+	cnv = new Canvas(900 , 900);
+	world.gravity.y = -3;
+	stupid = new Sprite(0, 450, 200, 400, 'd');
+	stupid.color = 'pink';
+	stupid.rotationSpeed = 12;
+	stupid.vel.x = 3;
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background('#a2eafa'); 
 }
 
 /*******************************************************/
