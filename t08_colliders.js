@@ -32,8 +32,11 @@ function setup() {
 		evil.bounciness = 1;
 		evil.friction = 0;
 		evilthings.add(evil);
-		evilthings.collides(stupid, evilded);
+		evilthings.collides(stupid, evildie);
 	};
+	function evildie(_evil, _stupid) {
+	_evil.remove();
+	}
 }
 	
 /*******************************************************/
@@ -41,10 +44,6 @@ function setup() {
 /*******************************************************/
 function draw() {
 	background('#a2eafa'); 
-
-	function evilded(_stupid, _ssss) {
-	_ssss.remove();
-	}
 }
 
 /*******************************************************/
